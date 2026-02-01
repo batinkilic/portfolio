@@ -1,70 +1,89 @@
 /* 
-   COMPLETE MOBILE REDESIGN 
-   Optimized for a clean, app-like feel on phones and tablets.
+================================================
+   MOBİL CSS - SIFIRDAN TASARIM
+   Tüm kayık görünümler düzeltildi
+================================================
 */
 
-/* TABLET & SMALL LAPTOPS (Max 1024px) */
+/* ============================================
+   TABLET (Max 1024px)
+============================================ */
 @media screen and (max-width: 1024px) {
     .container {
         padding: 0 2rem;
-        width: 100%;
     }
 
     .hero-title {
-        font-size: 3rem;
+        font-size: 3.2rem;
     }
 
     .section-title {
-        font-size: 2.5rem;
+        font-size: 2.8rem;
+    }
+
+    .image-wrapper {
+        width: 320px;
+        height: 320px;
     }
 }
 
-/* TABLET PORTRAIT (Max 900px) */
+/* ============================================
+   TABLETgray PORTRAIT & BÜYÜK MOBIL (Max 900px)
+============================================ */
 @media screen and (max-width: 900px) {
+
+    /* Genel Ayarlar */
     section {
-        padding: 60px 0;
-        /* Reduced padding between sections */
+        padding: 80px 0;
     }
 
-    /* Header Optimization */
+    /* HEADER - Sadece Logo Kalsın */
     header {
-        padding: 1rem 0;
-        position: relative;
-        /* Fixed causes issues on some mobiles if not managed well */
+        padding: 0.75rem 0;
+        background: rgba(10, 14, 39, 0.98);
     }
 
     nav {
-        flex-direction: column;
-        gap: 1.5rem;
+        flex-direction: row;
+        /* Logo ortada dursun */
+        justify-content: center;
     }
 
+    .logo {
+        font-size: 1.3rem;
+    }
+
+    /* Nav linklerini gizle */
     .nav-links {
-        display: none;
-        /* Hide standard nav links on mobile/tablet */
+        display: none !important;
     }
 
-    /* Hero Optimization */
+    /* Header'daki büyük download butonlarını GİZLE */
+    .nav-buttons {
+        display: none !important;
+    }
+
+    /* HERO BÖLÜMÜ */
     .hero {
         min-height: auto;
-        padding-top: 40px;
+        padding-top: 100px;
+        /* Header'dan sonra boşluk */
         padding-bottom: 60px;
-        text-align: center;
     }
 
     .hero-grid {
-        grid-template-columns: 1fr;
-        gap: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 2.5rem;
     }
 
-    .hero-content {
-        order: 2;
-        /* Text below image */
-    }
-
+    /* Fotoğraf Üstte */
     .hero-image {
         order: 1;
-        /* Image on top */
-        margin-bottom: 1rem;
+        width: 100%;
+        margin: 0;
     }
 
     .image-wrapper {
@@ -73,117 +92,146 @@
         margin: 0 auto;
     }
 
+    /* Metin Altta */
+    .hero-content {
+        order: 2;
+        width: 100%;
+    }
+
+    .hero-subtitle {
+        margin: 0 auto 1.5rem auto;
+    }
+
     .hero-title {
-        font-size: 2.5rem;
-        margin-bottom: 1rem;
+        font-size: 2.8rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .hero-description {
+        font-size: 1.1rem;
+        max-width: 100%;
+        margin: 0 auto 2.5rem auto;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+    }
+
+    /* Projeler ve Beceriler */
+    .projects-grid,
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    /* İletişim */
+    .contact-info {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}
+
+/* ============================================
+   MOBİL TELEFONLAR (Max 600px)
+============================================ */
+@media screen and (max-width: 600px) {
+
+    /* HTML Font boyutu küçült */
+    html {
+        font-size: 14px;
+    }
+
+    /* Container kenar boşlukları */
+    .container {
+        padding: 0 1.25rem;
+    }
+
+    /* Bölümler arası boşluk */
+    section {
+        padding: 60px 0;
+    }
+
+    /* ============================================
+       HEADER - Mini & Temiz
+    ============================================ */
+    header {
+        padding: 0.6rem 0;
+    }
+
+    .logo {
+        font-size: 1.1rem;
+    }
+
+    /* ============================================
+       HERO - Fotoğraf + Metin Perfect
+    ============================================ */
+    .hero {
+        padding-top: 80px;
+        padding-bottom: 50px;
+    }
+
+    .image-wrapper {
+        width: 240px;
+        height: 240px;
+    }
+
+    .hero-title {
+        font-size: 2.2rem;
+        line-height: 1.15;
     }
 
     .hero-description {
         font-size: 1rem;
-        margin-bottom: 2rem;
+        line-height: 1.6;
     }
 
     .hero-buttons {
-        justify-content: center;
-        flex-direction: column;
-        width: 100%;
-        max-width: 400px;
-        margin: 0 auto;
-        gap: 1rem;
+        max-width: 100%;
     }
 
-    /* Stacking Nav Buttons */
-    .nav-buttons {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        gap: 10px !important;
+    .btn {
+        padding: 14px 24px;
+        font-size: 0.9rem;
     }
 
-    .nav-buttons .btn {
-        width: 100%;
-        text-align: center;
-        justify-content: center;
-    }
-}
-
-/* MOBILE PHONES (Max 600px) */
-@media screen and (max-width: 600px) {
-
-    /* Global Resets */
-    html {
-        font-size: 14px;
-        /* Base font size reduction */
-    }
-
-    .container {
-        padding: 0 1.5rem;
-    }
-
-    /* Typography Adjustments */
+    /* ============================================
+       BAŞLIKLAR
+    ============================================ */
     .section-title {
         font-size: 2rem;
         margin-bottom: 2.5rem;
-        text-align: center;
     }
 
-    .section-title::after {
-        /* Centered underscore if any */
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    /* Hero Specifics */
-    .hero-title {
-        font-size: 2.2rem;
-        /* Even smaller for phones */
-        line-height: 1.2;
-    }
-
-    .image-wrapper {
-        width: 220px;
-        height: 220px;
-    }
-
-    /* Cards */
-    .projects-grid,
-    .skills-grid {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-
+    /* ============================================
+       KARTLAR
+    ============================================ */
     .project-card,
     .skill-card {
-        padding: 1.5rem;
+        padding: 1.75rem;
     }
 
     .project-title {
-        font-size: 1.3rem;
+        font-size: 1.25rem;
     }
 
-    /* Buttons */
-    .btn {
-        width: 100%;
-        padding: 12px 20px;
+    .project-desc {
+        font-size: 0.95rem;
     }
 
-    /* Footer & Contact */
-    .contact-info {
-        flex-direction: column;
-        gap: 1rem;
-    }
-
-    .contact-info a {
-        font-size: 1.1rem;
-    }
-
-    footer {
-        padding: 40px 0;
-    }
-
-    /* Timeline Adjustments */
+    /* ============================================
+       TIMELINE
+    ============================================ */
     .timeline {
-        padding-left: 20px;
+        padding-left: 2rem;
     }
 
     .timeline::before {
@@ -191,8 +239,53 @@
     }
 
     .timeline-item::before {
-        left: -27px;
+        left: -2.5rem;
         width: 12px;
         height: 12px;
+    }
+
+    .exp-role {
+        font-size: 1.3rem;
+    }
+
+    .exp-title {
+        font-size: 1rem;
+    }
+
+    /* ============================================
+       FOOTER
+    ============================================ */
+    footer {
+        padding: 60px 0;
+    }
+
+    .contact-info a {
+        font-size: 1.05rem;
+    }
+}
+
+/* ============================================
+   ÇOK KÜÇÜK MOBIL (Max 400px)
+============================================ */
+@media screen and (max-width: 400px) {
+    html {
+        font-size: 13px;
+    }
+
+    .container {
+        padding: 0 1rem;
+    }
+
+    .image-wrapper {
+        width: 200px;
+        height: 200px;
+    }
+
+    .hero-title {
+        font-size: 1.9rem;
+    }
+
+    .section-title {
+        font-size: 1.75rem;
     }
 }
