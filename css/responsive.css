@@ -60,7 +60,7 @@
         gap: 0.5rem !important;
         width: auto !important;
         max-width: none !important;
-        justify-content: center !important;
+        justify-content: flex-end !important;
         margin: 0.5rem auto 0 auto !important;
     }
 
