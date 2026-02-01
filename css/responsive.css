@@ -56,17 +56,19 @@
     /* Download butonlarını mobilde göster - dikey */
     body header .nav-buttons {
         display: flex !important;
-        flex-direction: column !important;
-        gap: 0.75rem !important;
-        width: 100% !important;
-        max-width: 300px !important;
-        margin: 1rem auto 0 auto !important;
+        flex-direction: row !important;
+        gap: 0.5rem !important;
+        width: auto !important;
+        max-width: none !important;
+        justify-content: center !important;
+        margin: 0.5rem auto 0 auto !important;
     }
 
     body header .nav-buttons .btn {
-        width: 100% !important;
-        font-size: 0.75rem !important;
-        padding: 8px 16px !important;
+        width: auto !important;
+        font-size: 0.65rem !important;
+        padding: 5px 10px !important;
+        white-space: nowrap !important;
     }
 
     /* ========== HERO BÖLÜMÜ ========== */
