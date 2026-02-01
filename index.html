@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Müslüm Batın Kılıç | Full-Stack Geliştirici</title>
+    <meta name="description"
+        content="Müslüm Batın Kılıç - Full-Stack Geliştirici ve Bilgisayar Mühendisliği Öğrencisi Portfolio.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,600;0,800;1,600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">MBK</div>
+                <div class="nav-links">
+                    <a href="#about">Hakkımda</a>
+                    <a href="#projects">Projeler</a>
+                    <a href="#experience">Deneyim</a>
+                    <a href="#skills">Yetenekler</a>
+                    <a href="#contact">İletişim</a>
+                </div>
+                <div style="display: flex; gap: 1rem;">
+                    <a href="assets/Muslum_Batin_Kilic_CV.pdf" class="btn btn-outline" download>CV İndir</a>
+                    <a href="javascript:void(0)" onclick="downloadPortfolio()" class="btn btn-primary">Portföy İndir
+                        (PDF)</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content fade-in-up">
+                    <span class="hero-subtitle">MERHABA, BEN</span>
+                    <h1 class="hero-title">Müslüm Batın Kılıç</h1>
+                    <p class="hero-description">
+                        Full-Stack Geliştirici ve Bilgisayar Mühendisliği Öğrencisi.
+                        Modern web teknolojileri ve yapay zeka ile ölçeklenebilir kurumsal çözümler üretiyorum.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">Projelerimi İncele</a>
+                        <a href="#contact" class="btn btn-outline">İletişime Geç</a>
+                    </div>
+                </div>
+                <div class="hero-image fade-in-up">
+                    <div class="image-wrapper">
+                        <img src="assets/profile.jpg" alt="Müslüm Batın Kılıç">
+                        <div class="image-decoration"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title fade-in-up">Hakkımda</h2>
+            <div class="about-content fade-in-up">
+                <p style="color: var(--text-secondary); max-width: 800px; margin-bottom: 2rem;">
+                    Kocaeli Sağlık ve Teknoloji Üniversitesi Bilgisayar Mühendisliği 4. sınıf öğrencisiyim.
+                    Hem akademik çalışmalarımda hem de profesyonel iş hayatımda yazılım mimarisi, API entegrasyonları ve
+                    kullanıcı deneyimi üzerine odaklanıyorum.
+                    Ayrıca IEEE KOSTÜ Yönetim Kurulu Başkanı olarak teknoloji topluluklarında aktif rol alıyorum.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title fade-in-up">Projeler</h2>
+
+            <!-- Category 1 -->
+            <h3 class="fade-in-up" style="margin-bottom: 2rem; color: white;">Kurumsal Çözümler ve Yönetim Sistemleri
+            </h3>
+            <div class="projects-grid">
+                <!-- Project A -->
+                <div class="project-card fade-in-up">
+                    <span class="project-category">CRM & Veri Yönetimi</span>
+                    <h3 class="project-title">Kurumsal CRM ve Veri Yönetim Platformu</h3>
+                    <p class="project-desc">
+                        <strong>İşlev:</strong> Kurum ile mezunlar arasındaki iletişimi sürdürülebilir kılan, istihdam
+                        verilerinin analiz edildiği bir altyapıdır.
+                        <br><br>
+                        <strong>Özellikler:</b>
+                            <ul
+                                style="list-style: disc; margin-left: 1.2rem; color: var(--text-secondary); margin-bottom: 1rem;">
+                                <li>Dinamik veri filtreleme ve raporlama panelleri.</li>
+                                <li>PDF formatında otomatik belge/CV oluşturma modülleri.</li>
+                                <li>Kurum içi anlık iletişim (Chat) ve duyuru altyapısı.</li>
+                                <li>Rol tabanlı yetkilendirme ve güvenlik loglama sistemi.</li>
+                            </ul>
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Excel Entegrasyonu</span>
+                    </div>
+                </div>
+
+                <!-- Project B -->
+                <div class="project-card fade-in-up">
+                    <span class="project-category">Pazar Yeri</span>
+                    <h3 class="project-title">Yetenek Havuzu ve Staj Eşleşme Portalı (Marketplace)</h3>
+                    <p class="project-desc">
+                        <strong>Kurgu:</strong> Öğrencilerin çalışma alanlarını ve profillerini sergilediği bir vitrin
+                        yapısıdır.
+                        <br><br>
+                        <strong>Gizlilik ve Erişim:</strong> Firma yetkilileri yetkinlikleri inceleyebilir ancak
+                        iletişim bilgilerini görüntüleyemez.
+                        <br><br>
+                        <strong>Spam Koruması:</strong> Kurumsal üyelik zorunluluğu ve günlük iletişim kotası (10
+                        kişi/gün).
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Web</span>
+                        <span class="tech-tag">Güvenlik</span>
+                    </div>
+                </div>
+
+                <!-- Project C -->
+                <div class="project-card fade-in-up">
+                    <span class="project-category">Dijital Rehber</span>
+                    <h3 class="project-title">Dijital Yerleşke ve Derslik Rehberi</h3>
+                    <p class="project-desc">
+                        <strong>Yapı:</strong> Kampüs binalarının kat planlarını ve kapı numaralarını içeren krokiler
+                        entegre edilmiştir.
+                        <br><br>
+                        <strong>Arama Motoru:</strong> Derslik/birim aratıldığında ilgili alan görsel kroki üzerinde
+                        işaretlenir.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">İnteraktif Harita</span>
+                        <span class="tech-tag">Arama Motoru</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category 2 -->
+            <h3 class="fade-in-up" style="margin-top: 4rem; margin-bottom: 2rem; color: white;">Ar-Ge ve Yapay Zeka
+                Çalışmaları</h3>
+            <div class="projects-grid">
+                <!-- Project D -->
+                <div class="project-card fade-in-up">
+                    <span class="project-category">SaaS & AI</span>
+                    <h3 class="project-title">Klinik Süreç Yönetimi ve Görüntü İşleme (Tez Projesi)</h3>
+                    <p class="project-desc">
+                        <strong>Kapsam:</strong> Hasta takibi, randevu yönetimi ve stok/finans süreçlerinin tek bir
+                        merkezden yönetilmesi.
+                        <br><br>
+                        <strong>Yapay Zeka:</strong> Teşhis süreçlerine destek olması amacıyla, röntgen görüntülerini
+                        analiz eden özgün bir Görüntü İşleme Modeli eğitilme aşamasındadır.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Yapay Zeka</span>
+                        <span class="tech-tag">Görüntü İşleme</span>
+                        <span class="tech-tag">SaaS</span>
+                    </div>
+                </div>
+
+                <!-- Project E -->
+                <div class="project-card fade-in-up">
+                    <span class="project-category">Fintech & Blockchain</span>
+                    <h3 class="project-title">Finansal Varlık ve Risk Analiz Motoru</h3>
+                    <p class="project-desc">
+                        <strong>Entegrasyon:</strong> Cüzdan bağlantısı (Wallet Connect) ile varlıkların otomatik
+                        tanınması.
+                        <br><br>
+                        <strong>Analiz:</strong> Hazır YZ servisleri yerine, borsalardan çekilen anlık verilerin özel
+                        algoritmalarla işlenerek risk analizinin yapılması.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Blockchain</span>
+                        <span class="tech-tag">Wallet Connect</span>
+                        <span class="tech-tag">Algoritmik Analiz</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title fade-in-up">Profesyonel Deneyim</h2>
+            <div class="timeline">
+
+                <div class="timeline-item fade-in-up">
+                    <span class="exp-date">Ağustos 2025 - Aralık 2025</span>
+                    <h3 class="exp-role">Web Geliştirici</h3>
+                    <h4 class="exp-title" style="color: var(--text-secondary);">Üniversite Yazılım Ofisi</h4>
+                    <p class="exp-desc">
+                        Python ve React.js kullanılarak ölçeklenebilir web uygulamalarının geliştirilmesi.
+                        Backend veri akışı, API entegrasyonları ve sistem optimizasyonlarının yönetimi.
+                    </p>
+                </div>
+
+                <div class="timeline-item fade-in-up">
+                    <span class="exp-date">Temmuz 2025 - Ağustos 2025</span>
+                    <h3 class="exp-role">Web Geliştirici (Stajyer)</h3>
+                    <h4 class="exp-title" style="color: var(--text-secondary);">Üniversite Yazılım Ofisi</h4>
+                    <p class="exp-desc">
+                        Kullanıcı deneyimi odaklı arayüz tasarımları ve veri yönetimi.
+                    </p>
+                </div>
+
+                <div class="timeline-item fade-in-up">
+                    <span class="exp-date">Ağustos 2024 - Eylül 2025</span>
+                    <h3 class="exp-role">Yazılım Geliştirici (Stajyer)</h3>
+                    <h4 class="exp-title" style="color: var(--text-secondary);">Yazılım Teknolojileri Firması</h4>
+                    <p class="exp-desc">
+                        Web tabanlı uygulamalarda özellik geliştirme ve hata ayıklama süreçleri.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title fade-in-up">Teknik Yetkinlikler</h2>
+            <div class="skills-grid">
+                <div class="skill-card fade-in-up">
+                    <h3>Diller</h3>
+                    <ul class="skill-list">
+                        <li>Python</li>
+                        <li>C++</li>
+                        <li>JavaScript</li>
+                        <li>SQL</li>
+                    </ul>
+                </div>
+                <div class="skill-card fade-in-up">
+                    <h3>Framework & Araçlar</h3>
+                    <ul class="skill-list">
+                        <li>React.js</li>
+                        <li>YOLOv8</li>
+                        <li>HTML/CSS</li>
+                        <li>Git/GitHub</li>
+                    </ul>
+                </div>
+                <div class="skill-card fade-in-up">
+                    <h3>Uzmanlık Alanları</h3>
+                    <ul class="skill-list">
+                        <li>Web Geliştirme</li>
+                        <li>API Entegrasyonu</li>
+                        <li>Sistem Mimarisi</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="leadership" style="padding: 6rem 0;">
+        <div class="container">
+            <h2 class="section-title fade-in-up">Liderlik ve Gönüllülük</h2>
+            <div class="projects-grid">
+                <div class="project-card fade-in-up" style="border: none; background: transparent; padding-left: 0;">
+                    <h3 style="color: var(--accent-color); margin-bottom: 0.5rem;">Yönetim Kurulu Başkanı</h3>
+                    <p style="color: white; margin-bottom: 0.5rem;">IEEE KOSTÜ</p>
+                    <span style="color: var(--text-secondary); font-size: 0.9rem;">Haziran 2025 - Günümüz</span>
+                </div>
+                <div class="project-card fade-in-up" style="border: none; background: transparent; padding-left: 0;">
+                    <h3 style="color: var(--accent-color); margin-bottom: 0.5rem;">Etkinlik Komitesi Sorumlusu</h3>
+                    <p style="color: white; margin-bottom: 0.5rem;">IEEE KOSTÜ</p>
+                    <span style="color: var(--text-secondary); font-size: 0.9rem;">Ekim 2023 - Mayıs 2025</span>
+                </div>
+                <div class="project-card fade-in-up" style="border: none; background: transparent; padding-left: 0;">
+                    <h3 style="color: var(--accent-color); margin-bottom: 0.5rem;">Departman Sorumlusu</h3>
+                    <p style="color: white; margin-bottom: 0.5rem;">Türkiye Bilişim Derneği</p>
+                    <span style="color: var(--text-secondary); font-size: 0.9rem;">Aralık 2022</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container" id="contact">
+            <h2 class="section-title">İletişim</h2>
+            <div class="contact-info">
+                <a href="mailto:muslumbatinkilic@gmail.com">muslumbatinkilic@gmail.com</a>
+                <a href="tel:+905461331132">+90 546 133 11 32</a>
+            </div>
+            <p class="copyright">© 2026 Müslüm Batın Kılıç. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+
+    <!-- PDF Generation Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+    <!-- Hidden Portfolio Content for PDF Generation -->
+    <div id="portfolio-pdf-content" style="display: none;">
+        <div
+            style="font-family: 'Times New Roman', serif; padding: 40px; color: #000; background: #fff; line-height: 1.5;">
+            <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 20px; margin-bottom: 30px;">
+                <h1 style="margin: 0; font-size: 24pt; text-transform: uppercase;">Yazılım Mühendisi Portföyü</h1>
+                <h2 style="margin: 10px 0 0; font-size: 16pt;">Müslüm Batın Kılıç</h2>
+                <p style="margin: 5px 0;">Full-Stack Geliştirici | IEEE KOSTÜ Yönetim Kurulu Başkanı</p>
+                <p style="margin: 5px 0;">muslumbatinkilic@gmail.com | +90 546 133 11 32 | İzmit/Kocaeli</p>
+            </div>
+
+            <h3 style="border-bottom: 1px solid #ccc; text-transform: uppercase; margin-top: 30px;">1. Kurumsal Çözümler
+                ve Yönetim Sistemleri</h3>
+            <p>Üniversite bünyesindeki yazılım ofisinde geliştirdiğim ve süreçleri dijitalleştiren projeler.</p>
+
+            <div style="margin-bottom: 20px;">
+                <h4 style="margin-bottom: 5px;">A. Kurumsal CRM ve Veri Yönetim Platformu</h4>
+                <p style="margin: 0; font-style: italic; color: #555;">Büyük ölçekli kullanıcı verilerinin yönetildiği
+                    merkezi sistem.</p>
+                <ul style="margin-top: 5px;">
+                    <li><strong>İşlev:</strong> Kurum ile mezunlar arasındaki iletişimi sürdürülebilir kılar.</li>
+                    <li><strong>Özellikler:</strong> Dinamik raporlama, Otomatik CV oluşturma (PDF), Anlık iletişim
+                        (Chat), Rol tabanlı güvenlik.</li>
+                    <li><strong>Teknolojiler:</strong> Python, React, Excel Entegrasyonu.</li>
+                </ul>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <h4 style="margin-bottom: 5px;">B. Yetenek Havuzu ve Staj Eşleşme Portalı</h4>
+                <p style="margin: 0; font-style: italic; color: #555;">Gizlilik odaklı pazar yeri uygulaması.</p>
+                <ul style="margin-top: 5px;">
+                    <li><strong>Kurgu:</strong> Öğrenci yetkinlik vitrini.</li>
+                    <li><strong>Gizlilik:</strong> Firmalar yetkinlik görebilir, iletişim bilgisi için üyelik gerekir.
+                    </li>
+                    <li><strong>Spam Koruması:</strong> Günlük iletişim kotası (10 kişi/gün).</li>
+                </ul>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <h4 style="margin-bottom: 5px;">C. Dijital Yerleşke ve Derslik Rehberi</h4>
+                <p style="margin: 0; font-style: italic; color: #555;">İnteraktif kampüs rehberi.</p>
+                <ul style="margin-top: 5px;">
+                    <li><strong>Yapı:</strong> Kat planları ve kapı numaraları entegreli.</li>
+                    <li><strong>Özellik:</strong> Arama motoru ile görsel konum işaretleme.</li>
+                </ul>
+            </div>
+
+            <h3 style="border-bottom: 1px solid #ccc; text-transform: uppercase; margin-top: 30px;">2. Ar-Ge ve Yapay
+                Zeka Çalışmaları</h3>
+
+            <div style="margin-bottom: 20px;">
+                <h4 style="margin-bottom: 5px;">Klinik Süreç Yönetimi ve Görüntü İşleme (Tez)</h4>
+                <p style="margin: 0; font-style: italic; color: #555;">SaaS mimarili otomasyon.</p>
+                <ul style="margin-top: 5px;">
+                    <li><strong>Kapsam:</strong> Hasta, randevu ve stok yönetimi.</li>
+                    <li><strong>Yapay Zeka:</strong> Röntgen analiz eden özgün Görüntü İşleme Modeli.</li>
+                </ul>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <h4 style="margin-bottom: 5px;">Finansal Varlık ve Risk Analiz Motoru</h4>
+                <p style="margin: 0; font-style: italic; color: #555;">Blokzincir tabanlı analiz platformu.</p>
+                <ul style="margin-top: 5px;">
+                    <li><strong>Entegrasyon:</strong> Cüzdan bağlantısı (Wallet Connect).</li>
+                    <li><strong>Analiz:</strong> Anlık veri işleyen özel algoritmalar (API & Custom Algo).</li>
+                </ul>
+            </div>
+
+            <h3 style="border-bottom: 1px solid #ccc; text-transform: uppercase; margin-top: 30px;">3. Profesyonel
+                Deneyim</h3>
+            <ul style="list-style: none; padding: 0;">
+                <li style="margin-bottom: 15px;">
+                    <strong>Üniversite Yazılım Ofisi | Web Geliştirici</strong> <span
+                        style="float: right; font-style: italic;">Ağu 2025 - Ara 2025</span><br>
+                    Ölçeklenebilir web uygulamaları, Backend veri akışı, API entegrasyonları (Python, React).
+                </li>
+                <li style="margin-bottom: 15px;">
+                    <strong>Üniversite Yazılım Ofisi | Web Geliştirici (Stajyer)</strong> <span
+                        style="float: right; font-style: italic;">Tem 2025 - Ağu 2025</span><br>
+                    UI/UX tasarımları ve veri yönetimi.
+                </li>
+                <li style="margin-bottom: 15px;">
+                    <strong>Yazılım Teknolojileri Firması | Yazılım Geliştirici (Stajyer)</strong> <span
+                        style="float: right; font-style: italic;">Ağu 2024 - Eyl 2025</span><br>
+                    Web uygulama geliştirme ve hata ayıklama.
+                </li>
+            </ul>
+
+            <h3 style="border-bottom: 1px solid #ccc; text-transform: uppercase; margin-top: 30px;">4. Teknik
+                Yetkinlikler</h3>
+            <p><strong>Diller:</strong> Python, C++, JavaScript, SQL</p>
+            <p><strong>Framework & Araçlar:</strong> React.js, YOLOv8, HTML/CSS, Git/GitHub</p>
+            <p><strong>Uzmanlık:</strong> Web Geliştirme, API Entegrasyonu, Sistem Mimarisi</p>
+
+            <h3 style="border-bottom: 1px solid #ccc; text-transform: uppercase; margin-top: 30px;">5. Liderlik</h3>
+            <p><strong>Yönetim Kurulu Başkanı</strong> - IEEE KOSTÜ (Haz 2025 - Günümüz)</p>
+            <p><strong>Etkinlik Komitesi Sorumlusu</strong> - IEEE KOSTÜ (Eki 2023 - May 2025)</p>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
